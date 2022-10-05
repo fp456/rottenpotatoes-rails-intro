@@ -16,8 +16,7 @@
 <table class="table table-striped col-md-12" id="movies">
   <thead>
     <tr>
-      <th class="<%= 'p-3 mb-2 bg-warning' if params[:sorted_title] == "1" %>"> 
-        <%=link_to "Movie Title", movies_path(:sort => "title_sort", :ratings => Hash[@ratings_to_show.map {|x| [x, 1]}]), :id => "title_header", class:'hilite'%>  
+        <%= class="<%= 'p-3 mb-2 bg-warning' if params[:sorted_title] == "1" %>", link_to "Movie Title", movies_path(:sort => "title_sort", :ratings => Hash[@ratings_to_show.map {|x| [x, 1]}]), :id => "title_header", class:'hilite'%>  
       </th>
       <th>Rating</th>
       <th class="<%= 'p-3 mb-2 bg-warning' if params[:sorted_date] == "1"  %>"> 
