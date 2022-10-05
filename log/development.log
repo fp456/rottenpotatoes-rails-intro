@@ -89,3 +89,176 @@ Cannot render console from 135.180.133.190! Allowed networks: 127.0.0.1, ::1, 12
 
 Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 135.180.133.190 at 2022-10-05 08:59:55 +0000
 Cannot render console from 135.180.133.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 135.180.133.190 at 2022-10-05 09:21:38 +0000
+Cannot render console from 135.180.133.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.erb within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `include?' for nil:NilClass):
+     7:   <% @all_ratings.each do |rating| %>
+     8:     <div class="form-check  form-check-inline">
+     9:       <%= label_tag "ratings[#{rating}]", rating, class: 'form-check-label' %>
+    10:       <%= check_box_tag "ratings[#{rating}]", "1",  @ratings_to_show.include?(rating), class: 'form-check-input' %>
+    11:     </div>
+    12:   <% end %>
+    13:   <%= submit_tag 'Refresh', id: 'ratings_submit', class: 'btn btn-primary' %>
+  app/views/movies/index.html.erb:10:in `block (2 levels) in _app_views_movies_index_html_erb___3916996502769112770_69838824960140'
+  app/views/movies/index.html.erb:7:in `each'
+  app/views/movies/index.html.erb:7:in `block in _app_views_movies_index_html_erb___3916996502769112770_69838824960140'
+  app/views/movies/index.html.erb:5:in `_app_views_movies_index_html_erb___3916996502769112770_69838824960140'
+
+
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.7ms)
+
+
+Started GET "/" for 135.180.133.190 at 2022-10-05 09:21:49 +0000
+Cannot render console from 135.180.133.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `include?' for nil:NilClass):
+     7:   <% @all_ratings.each do |rating| %>
+     8:     <div class="form-check  form-check-inline">
+     9:       <%= label_tag "ratings[#{rating}]", rating, class: 'form-check-label' %>
+    10:       <%= check_box_tag "ratings[#{rating}]", "1",  @ratings_to_show.include?(rating), class: 'form-check-input' %>
+    11:     </div>
+    12:   <% end %>
+    13:   <%= submit_tag 'Refresh', id: 'ratings_submit', class: 'btn btn-primary' %>
+  app/views/movies/index.html.erb:10:in `block (2 levels) in _app_views_movies_index_html_erb___3916996502769112770_69838824960140'
+  app/views/movies/index.html.erb:7:in `each'
+  app/views/movies/index.html.erb:7:in `block in _app_views_movies_index_html_erb___3916996502769112770_69838824960140'
+  app/views/movies/index.html.erb:5:in `_app_views_movies_index_html_erb___3916996502769112770_69838824960140'
+
+
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.1ms)
+
+
+Started GET "/" for 135.180.133.190 at 2022-10-05 09:24:31 +0000
+Cannot render console from 135.180.133.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `include?' for nil:NilClass):
+     7:   <% @all_ratings.each do |rating| %>
+     8:     <div class="form-check  form-check-inline">
+     9:       <%= label_tag "ratings[#{rating}]", rating, class: 'form-check-label' %>
+    10:       <%= check_box_tag "ratings[#{rating}]", "1",  @ratings_to_show.include?(rating), class: 'form-check-input' %>
+    11:     </div>
+    12:   <% end %>
+    13:   <%= submit_tag 'Refresh', id: 'ratings_submit', class: 'btn btn-primary' %>
+  app/views/movies/index.html.erb:10:in `block (2 levels) in _app_views_movies_index_html_erb___3916996502769112770_69838824960140'
+  app/views/movies/index.html.erb:7:in `each'
+  app/views/movies/index.html.erb:7:in `block in _app_views_movies_index_html_erb___3916996502769112770_69838824960140'
+  app/views/movies/index.html.erb:5:in `_app_views_movies_index_html_erb___3916996502769112770_69838824960140'
+
+
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 135.180.133.190 at 2022-10-05 09:25:20 +0000
+Cannot render console from 135.180.133.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13','R'))[0m
+  Rendered movies/index.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 135.180.133.190 at 2022-10-05 09:25:24 +0000
+Cannot render console from 135.180.133.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13','R'))
+  Rendered movies/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&commit=Refresh" for 135.180.133.190 at 2022-10-05 09:25:26 +0000
+Cannot render console from 135.180.133.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG'))[0m
+  Rendered movies/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&sort=title_sort" for 135.180.133.190 at 2022-10-05 09:25:27 +0000
+Cannot render console from 135.180.133.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1"}, "sort"=>"title_sort"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG'))  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&sort=date_sort" for 135.180.133.190 at 2022-10-05 09:25:28 +0000
+Cannot render console from 135.180.133.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1"}, "sort"=>"date_sort"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG'))  ORDER BY "movies"."release_date" ASC[0m
+  Rendered movies/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/new" for 135.180.133.190 at 2022-10-05 09:25:33 +0000
+Cannot render console from 135.180.133.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#new as HTML
+  Rendered movies/new.html.erb within layouts/application (14.2ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 135.180.133.190 at 2022-10-05 09:25:35 +0000
+Cannot render console from 135.180.133.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG'))  ORDER BY "movies"."release_date" ASC
+  Rendered movies/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&commit=Refresh" for 135.180.133.190 at 2022-10-05 09:25:37 +0000
+Cannot render console from 135.180.133.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G'))  ORDER BY "movies"."release_date" ASC[0m
+  Rendered movies/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/10" for 135.180.133.190 at 2022-10-05 09:25:39 +0000
+Cannot render console from 135.180.133.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 10]]
+  Rendered movies/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 135.180.133.190 at 2022-10-05 09:25:40 +0000
+Cannot render console from 135.180.133.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G'))  ORDER BY "movies"."release_date" ASC[0m
+  Rendered movies/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.2ms)
